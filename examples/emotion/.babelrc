@@ -1,0 +1,16 @@
+{
+ "presets": [
+    [
+      "env",
+      {
+        "modules": false,
+        "loose": true
+      }
+    ],
+    "react"
+  ],
+  "plugins": [
+    "transform-object-rest-spread",
+    ["emotion/babel", { "inline": true }]
+  ]
+}
