@@ -1,8 +1,8 @@
-const React = require('react')
-const { renderToString } = require('react-dom/server')
-const styled = require('emotion/react').default
-const { extractCritical } = require('emotion/server')
-const Button = require('./src/components/Button')
+import React from 'react'
+import { renderToString } from 'react-dom/server'
+import styled from 'emotion/react'
+import { extractCritical } from 'emotion/server'
+import Button from './src/components/Button'
 
 const App = props => (
   <Button {...props}>

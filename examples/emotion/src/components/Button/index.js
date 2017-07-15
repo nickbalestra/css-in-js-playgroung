@@ -1,7 +1,7 @@
-const React = require('react');
-const styled = require('emotion/react').default
-const color = require('../../../../../design-tokens/color')
-const spacing = require('../../../../../design-tokens/spacing')
+import React from 'react';
+import styled from 'emotion/react'
+import color from '../../../../../design-tokens/color'
+import spacing from '../../../../../design-tokens/spacing'
 
 
 const Button = styled.button`
@@ -18,4 +18,4 @@ const Button = styled.button`
   }
 `;
 
-module.exports = Button
+export default Button;
