@@ -1,25 +1,23 @@
-import React from 'react'
-import { renderToString } from 'react-dom/server'
-import styled from 'emotion/react'
-import { extractCritical } from 'emotion/server'
-import Button from './src/components/Button'
-
+import React from 'react';
+import { renderToString } from 'react-dom/server';
+import styled from 'emotion/react';
+import { extractCritical } from 'emotion/server';
+import Button from './src/components/Button';
 
 const CustomButton = styled(Button)`
   background: black;
   color: white;
-`
+`;
 
-const Fragment = () => (
+const Fragment = () =>
   <div>
     <Button>A Default Button</Button>
     <Button primary>A Primary Button</Button>
     <CustomButton>A Custom Button</CustomButton>
-  </div>
-)
+  </div>;
 
-const { html, ids, css } = extractCritical(renderToString(<Fragment/>))
+const { html, ids, css } = extractCritical(renderToString(<Fragment />));
 
-console.log('HTML:\n======\n', html)
-console.log('\nIDs:\n======\n', ids)
-console.log('\nCSS:\n======\n',css)
+console.log('HTML:\n======\n', html);
+console.log('\nIDs:\n======\n', ids);
+console.log('\nCSS:\n======\n', css);

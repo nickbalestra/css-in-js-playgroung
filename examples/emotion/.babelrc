@@ -3,14 +3,16 @@
     [
       "env",
       {
-        "modules": "commonjs",
-        "loose": true
+        "modules": "commonjs"
       }
     ],
     "react"
   ],
   "plugins": [
     "transform-object-rest-spread",
-    ["emotion/babel", { "inline": true }]
+    [
+      "emotion/babel",
+      { "inline": true }
+    ]
   ]
 }

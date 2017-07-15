@@ -1,0 +1,21 @@
+{
+  "name": "css-in-js-playground",
+  "version": "1.0.0",
+  "scripts": {
+    "format": "prettier --single-quote examples/**/*.js --write",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "author": "Nick Balestra",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.1",
+    "prettier": "^1.5.3"
+  }
+}

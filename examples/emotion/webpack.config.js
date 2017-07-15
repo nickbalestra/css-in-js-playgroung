@@ -1,5 +1,5 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const loaders = [
   {
@@ -9,9 +9,7 @@ const loaders = [
   }
 ];
 
-
 module.exports = {
-  devtool: 'eval',
   entry: path.resolve('src', 'main.js'),
   output: {
     path: path.resolve('build'),
@@ -30,8 +28,5 @@ module.exports = {
   ],
   module: {
     loaders
-  },
-  node: {
-    fs: 'empty'
   }
-}
+};
