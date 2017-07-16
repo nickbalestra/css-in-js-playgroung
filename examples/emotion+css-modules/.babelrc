@@ -1,0 +1,24 @@
+{
+ "presets": [
+    [
+      "env",
+      {
+        "modules": "commonjs"
+      }
+    ],
+    "react"
+  ],
+  "plugins": [
+    // [
+    //   "css-modules-transform", {
+    //     "generateScopedName": "[hash:8]",
+    //     "extensions": [".css"]
+    //   }
+    // ],
+    "transform-object-rest-spread",
+    [
+      "emotion/babel",
+      { "inline": true }
+    ]
+  ]
+}
