@@ -9,10 +9,7 @@
     "react"
   ],
   "plugins": [
-    "transform-object-rest-spread",
-    [
-      "emotion/babel",
-      { "inline": true }
-    ]
+    "babel-macros",
+    "transform-object-rest-spread"
   ]
 }

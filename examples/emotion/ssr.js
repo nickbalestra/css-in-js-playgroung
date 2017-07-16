@@ -1,6 +1,6 @@
 import React from 'react';
 import { renderToString } from 'react-dom/server';
-import styled from 'emotion/react';
+import styled from 'emotion/react/macro';
 import { extractCritical } from 'emotion/server';
 import Button from './src/components/Button';
 
