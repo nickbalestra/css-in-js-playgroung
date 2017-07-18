@@ -11,10 +11,6 @@ const Button = styled.button`
   background: ${props => (props.primary ? color.primary : color.secondary)};
   color: ${props => (props.primary ? color.secondary : color.primary)};
   padding: ${spacing.medium};
-  &:hover {
-    background: ${color.tertiary};
-    color: ${color.primary};
-  }
 `;
 
 export default Button;

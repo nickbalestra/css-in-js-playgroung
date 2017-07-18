@@ -1,4 +1,11 @@
+@value tertiary, primary from '../../../../../design-tokens/color.css';
+
 .button {
   border: none;
   border-radius: 5px;
+}
+
+.button:hover {
+  background: tertiary;
+  color: primary;
 }
